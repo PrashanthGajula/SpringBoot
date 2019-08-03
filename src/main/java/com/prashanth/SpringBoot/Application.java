@@ -8,13 +8,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author INSERT USERNAME
  */
 @SpringBootApplication
-public class Application {
+public class Application
+{
 
-	/**
-	 * @param args
-	 */
-	public static void main(final String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    /**
+     * @param args
+     *            arguments
+     */
+    public static void main(final String[] args)
+    {
+        SpringApplication.run(Application.class, args);
+    }
 
 }
