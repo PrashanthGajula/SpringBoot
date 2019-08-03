@@ -22,8 +22,9 @@ public class Controller
     @Autowired
     EmpService empService;
 
-    @RequestMapping(value="/employee/all", method=RequestMethod.GET)
-    public List<Employee> getEmployees(){
+    @RequestMapping(value = "/employee/all", method = RequestMethod.GET)
+    public List<Employee> getEmployees()
+    {
         System.out.println(this.getClass().getSimpleName() + " - Get all employees service is invoked");
         return empService.getEmployees();
     }
@@ -32,7 +33,8 @@ public class Controller
      * @return
      */
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello()
+    {
         return "Hello, Prashanth";
     }
 
